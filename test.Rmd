@@ -1,0 +1,64 @@
+---
+title: "<code>Habits</code>"
+subtitle: "This is a badass revealjs presentation"
+author: "Created by <a href='https://danielschalk.com/' target='_blank'>Daniel Schalk</a>"
+date: March 22, 2005
+output:
+  revealjs::revealjs_presentation:
+    css: myreveal.css
+    transition: slide
+    includes:
+      in_header: header.html
+      after_body: after.html
+    self_contained: false
+    reveal_options:
+      controls: true
+      center: true
+      slideNumber: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+```{r}
+x = rnorm(10)
+str(x)
+
+head(iris)
+
+plot(1:10, 1:10)
+```
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+```{r}
+myfun = function () {
+	return (1:10)
+}
+# Print something
+summary(myfun())
+print("blabla")
+```
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
