@@ -3,11 +3,14 @@
      * Hack to include paralax background 
      */
     Reveal.initialize({
-      parallaxBackgroundImage: "figures/parallax_section.jpg"
+      parallaxBackgroundImage: "figures/parallax_section.jpg",
      //  controls: true,
      //  controlsTutorial: true,
     	// controlsLayout: "bottom-right",
      //  controlsBackArrows: "faded"
+      dependencies: [
+  		  { src: 'reveal.js-menu-master/menu.js' }
+	    ]
     });
     /* 
      * Configure slide numbering to 'actualslide / #totalslides'

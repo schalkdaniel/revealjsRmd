@@ -2,7 +2,7 @@
 title: "<code>Habits</code>"
 subtitle: "This is a badass revealjs presentation"
 author: "Created by <a href='https://danielschalk.com/' target='_blank'>Daniel Schalk</a>"
-date: March 22, 2005
+date: "March 22, 2005<div style='margin-top:50px;'><a href='https://danielschalk.com' target='_blank'><i style='margin-right:70px;' class='fab fa-linkedin fa-3x'></i></a><a href='https://danielschalk.com' target='_blank'><i style='margin-right:70px;' class='fab fa-github fa-3x'></i></a><a href='https://danielschalk.com' target='_blank'><i class='fab fa-twitter fa-3x'></i></a></div>"
 output:
   revealjs::revealjs_presentation:
     css: myreveal.css
@@ -25,8 +25,14 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 ## Getting up
 
-- Turn off alarm
+- Turn off alarm <i class="fab fa-linkedin"></i>
 - Get out of bed
+
+    <i class="fas fa-user"></i> <!-- uses solid style -->
+    <i class="far fa-user"></i> <!-- uses regular style -->
+    <i class="fal fa-user"></i> <!-- uses light style -->
+    <!--brand icon-->
+    <i class="fab fa-github-square"></i> <!-- uses brands style -->
 
 ## Breakfast
 
