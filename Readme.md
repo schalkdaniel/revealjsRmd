@@ -10,7 +10,6 @@ This template highly depends on the great work others have already done:
 - [**Font-Awesome:**](https://www.google.com)
 - [**rmarkdown**](https://rmarkdown.rstudio.com/)
 - [**revealjs (R Package)**](https://cran.r-project.org/web/packages/revealjs/index.html)
-- [**reveal.js-menu**](https://github.com/denehyg/reveal.js-menu)
 - [**Google Fonts**](https://fonts.google.com/)
 
 ## How to Use
@@ -92,5 +91,3 @@ To use a custom Google Fonts for the font face go to the [Google Fonts website](
 - Select the font and copy the `HTML` code to include the font into the header.
 - Paste the code into `header.html`.
 - Adjust the font-family variable `--main-font-family` in `myreveal.css`.
-
-### Customize reveal.js-menu

@@ -108,7 +108,8 @@ body {
   font-size: 1.6em; }
 
 .reveal h2 {
-  font-size: 1.3em; }
+  font-size: 1.3em; 
+  color: rgba(255, 255, 255, 0.5); }
 
 .reveal h3 {
   font-size: 1em; }
@@ -130,6 +131,7 @@ h1.subtitle {
 }
 h2.author {
   font-size: 0.6em;
+  color: white;
   /*text-transform: none;*/
 }
 h3.date {
@@ -140,8 +142,9 @@ h3.date {
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
-  line-height: 1.3; }
+  margin-top: 40px;
+  line-height: 1.3; 
+  text-align: justify; }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
@@ -168,7 +171,10 @@ h3.date {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: disc; 
+  margin-top: 40px;
+  margin-left: 100px; 
+  float: left; }
 
 .reveal ul ul {
   list-style-type: square; }

@@ -13,6 +13,7 @@ output:
     self_contained: false
     reveal_options:
       controls: true
+      controlsTutorial: true
       center: true
       slideNumber: true
 ---
@@ -21,50 +22,37 @@ output:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# In the morning
+# Ordinary Markdown
 
-## Getting up
+## Text and Lists
 
-- Turn off alarm <i class="fab fa-linkedin"></i>
-- Get out of bed
+This is an ordinary **paragraph**. Including urls is also quite easy with `[]()` (i.e. search for something on [google](https://google.com)). Unordered lists looks like this:
 
-    <i class="fas fa-user"></i> <!-- uses solid style -->
-    <i class="far fa-user"></i> <!-- uses regular style -->
-    <i class="fal fa-user"></i> <!-- uses light style -->
-    <!--brand icon-->
-    <i class="fab fa-github-square"></i> <!-- uses brands style -->
+- Element 1
+- Element 2
 
-## Breakfast
 
-- Eat eggs
-- Drink coffee
+# Use R Code
+
+## R Chunks
+
+`R` Chunks can be included with standard `Rmd` syntax:
 
 ```{r}
-x = rnorm(10)
-str(x)
-
 head(iris)
-
-plot(1:10, 1:10)
 ```
 
-# In the evening
+## Graphics
 
-## Dinner
+```{r, warning=FALSE,message=FALSE,echo=FALSE,fig.align='center'}
+library(ggplot2) 
 
-- Eat spaghetti
-- Drink wine
-
-```{r}
-myfun = function () {
-	return (1:10)
-}
-# Print something
-summary(myfun())
-print("blabla")
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point() + theme_bw()
 ```
 
-## Going to sleep
 
-- Get in bed
-- Count sheep
+# Thanks for your attention!
+
+## 
+<h1>Credits</h1>
+
