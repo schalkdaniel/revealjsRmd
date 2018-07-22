@@ -48,6 +48,7 @@ git clone --recurse-submodules https://github.com/schalkdaniel/revealjsRmd.git
 ### Structure of the template
 
 - `template.Rmd`: This is the main file which is rendered by `rmarkdown`. To use the template as is the YAML header must include the `header.html`,  `after.html`, and `myreveal.css`. The header could look like this (with some ohter options):
+    ```
     ---
     title: "<code>My Presentation</code>"
     subtitle: "This is a revealjs presentation"
@@ -66,6 +67,7 @@ git clone --recurse-submodules https://github.com/schalkdaniel/revealjsRmd.git
           center: true
           slideNumber: true
     ---
+    ```
 - `myreveal.css`: This file cares about coloring and appearence (e.g. the font-family).
 - `in_header`: The heaer includes some additional stuff like Google Fonts or the path to the Font-Awesome directory (which is included as submodule).
 - `after_body`: This file includes some `revealjs` customizations which cannot be done directly within the YAML header.
