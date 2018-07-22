@@ -34,7 +34,7 @@ code span.cn { color: #880000; } /* Constant */
 code span.co { color: #60a0b0; font-style: italic; } /* Comment */
 code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
+code span.dt { color: rgba(255, 170, 0, 0.6); } /* DataType */
 code span.dv { color: rgb(255, 160, 160); } /* DecVal */
 code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
@@ -188,6 +188,9 @@ h3.date {
 .reveal ol ul {
   display: block;
   margin-left: 40px; }
+  
+.reveal li {
+  margin-bottom: 20px; }
 
 .reveal dt {
   font-weight: bold; }
@@ -215,7 +218,7 @@ h3.date {
 .reveal pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   text-align: left;
   font-size: 16px;
@@ -229,6 +232,7 @@ h3.date {
   text-transform: none; }
 
 .reveal pre code {
+  font-size: 16pt;
   display: block;
   padding: 5px;
   overflow: auto;
