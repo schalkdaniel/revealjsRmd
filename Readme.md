@@ -44,9 +44,13 @@ git clone --recurse-submodules git@github.com:schalkdaniel/revealjsRmd.git
 git clone --recurse-submodules https://github.com/schalkdaniel/revealjsRmd.git
 ```
 
+#### Render `index.Rmd`
+
+Finally, use `rmarkdown::render("index.Rmd")` to create the final `index.html` and the needed `index_files` which includes all required `revealjs` files.
+
 ### Structure of the template
 
-- `template.Rmd`: This is the main file which is rendered by `rmarkdown`. To use the template as is the YAML header must include the `header.html`,  `after.html`, and `myreveal.css`. The header could look like this (with some ohter options):
+- `index.Rmd`: This is the main file which is rendered by `rmarkdown`. To use the template as is the YAML header must include the `header.html`,  `after.html`, and `myreveal.css`. The header could look like this (with some ohter options):
     ```
     ---
     title: "<code>My Presentation</code>"
