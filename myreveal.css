@@ -388,6 +388,9 @@ h3.date {
  * FONT AWESOME ADJUSTMENTS
  *********************************************/
 
+ .fas {
+  color: var(--main-discreet-color);
+}
 .fab {
   color: var(--main-discreet-color);
 }
